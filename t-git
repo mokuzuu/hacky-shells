@@ -1,7 +1,6 @@
 #!/bin/bash
 default_commit_mg="UPDATE"
 status=`git status --porcelain`
-echo -n $status | wc -m
 if [[ -z "$status" ]]; then
     echo $status    
     echo "There is not change."
