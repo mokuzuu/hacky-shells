@@ -2,7 +2,7 @@
 default_commit_mg="UPDATE"
 status=`git status --porcelain`
 echo -n $status | wc -m
-if [[ -n status ]]; then
+if [[ -z "$status" ]]; then
     echo $status    
     echo "There is not change."
 else 
@@ -13,5 +13,5 @@ else
     if [[ -n "$given_commit_mg" ]]; then
         git commit -m "$given_commit_mg"
     fi  
-        git commit -m "$given_commit_mg"
+        git commit -m "$default_commit_mg"
 fi
