@@ -10,6 +10,7 @@ else
     read given_commit_mg
     if [[ -n "$given_commit_mg" ]]; then
         git commit -m "$given_commit_mg"
-    fi  
+    else  
         git commit -m "$default_commit_mg"
+    fi
 fi
