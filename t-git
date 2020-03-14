@@ -3,7 +3,7 @@ default_commit_mg="UPDATE"
 status=`git status --porcelain`
 if [[ -z status ]]; then
     echo "There is not change."
-fi 
+else 
     echo $status
     git add .
     echo "Type commit message if you want"
@@ -12,3 +12,4 @@ fi
         git commit -m "$given_commit_mg"
     fi  
         git commit -m "$given_commit_mg"
+fi
