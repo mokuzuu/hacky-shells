@@ -13,5 +13,5 @@ else
     else  
         git commit -m "$default_commit_mg"
     fi
-    git push origin master
+    git push
 fi
