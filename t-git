@@ -2,7 +2,7 @@
 default_commit_mg="UPDATE"
 status=`git status --porcelain`
 if [[ -z "$status" ]]; then  
-    echo "There is not change."
+    echo "There is no change."
 else 
     echo $status
     git add .
